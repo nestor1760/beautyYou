@@ -3,10 +3,6 @@ import '../styles/globals.css'
 import { ILogoProps } from '../types/types'
 
 const Logo: FC<ILogoProps> = ({ fontSize, spanSize }) => {
-
-  console.log(fontSize, spanSize);
-
-
   return (
     <p>
       <span className={`fontBrygada text-[${fontSize}] font-bold text-blackColor`}>Beauty</span>
