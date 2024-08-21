@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import '../styles/globals.css'
-import { ILogoProps } from '../components/types/types'
+import { ILogoProps } from '../types/types'
 
 const Logo: FC<ILogoProps> = ({ fontSize, spanSize }) => {
 
