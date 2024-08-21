@@ -1,7 +1,9 @@
+import MainLayout from "./MainLayout";
+
 export default function Home() {
   return (
-    <main>
-      Hello
-    </main>
+    <MainLayout>
+      <p>you</p>
+    </MainLayout>
   );
 }

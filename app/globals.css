@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --primary-color: #1D0C07;
-  --secondary-color: #FFFFFF;
-  --font-size: 16px;
-}
