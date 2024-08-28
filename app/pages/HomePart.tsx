@@ -2,10 +2,6 @@ import React from 'react'
 import { BsArrowDown } from "react-icons/bs";
 
 const HomePart = () => {
-
-  console.log();
-
-
   return (
     <section className={`
       flex 
