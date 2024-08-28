@@ -25,6 +25,7 @@ export default function MainLayout({
           justify-center 
           items-center 
           flex-col 
+          h-screen
           bg-[url('../../public/images/back_img.png')]
           `}>
           <Header />
