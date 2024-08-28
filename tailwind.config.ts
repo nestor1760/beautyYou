@@ -8,9 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        Brygada: ['Brygada_1918', 'sans-serif'],
-        Rasa: ['Rasa', 'sans-serif'],
+      fontSize: {
+        "28px": "28px",
+        "40px": "40px"
       },
       colors: {
         'blackColor': '#1D0C07',

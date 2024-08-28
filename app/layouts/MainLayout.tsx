@@ -25,11 +25,10 @@ export default function MainLayout({
           justify-center 
           items-center 
           flex-col 
-          min-h-screen
           bg-[url('../../public/images/back_img.png')]
           `}>
           <Header />
-          <main className="flex-grow p-4">
+          <main className="flex-grow">
             {children}
           </main>
           <Footer />
