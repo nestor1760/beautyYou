@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className='w-full max-w-[1110px] mx-auto flex items-center justify-between fixed top-0 fontRasa text-whiteColor z-10'>
-      <Logo fontSize='default' spanSize='default' />
+      <Logo fontSize='default' spanSize='default' onClick={() => scrollToStart()} />
       <Navigation />
     </header>
   )
