@@ -1,6 +1,10 @@
 'useClient'
 
+import { useNavMenu } from "../hooks/useNavigation";
+
 const Navigation = () => {
+  const { scrollToPart } = useNavMenu();
+
   const navData = [
     'about me', 'gallery', 'services', 'promotions', 'opinions', 'contact'
   ]
@@ -8,9 +12,9 @@ const Navigation = () => {
   return (
     <div className='flex'>
       {navData.map(navItem =>
-        <a href='#' key={navItem} className='text-base mr-10 last:mr-0'>
+        <button onClick={() => scrollToPart(navItem)} key={navItem} className='text-base mr-10 last:mr-0'>
           {navItem.toUpperCase()}
-        </a>
+        </button>
       )}
     </div>
   )
