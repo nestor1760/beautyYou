@@ -3,14 +3,18 @@
 import Logo from '../shared/Logo'
 import Navigation from './Navigation'
 import { useNavMenu } from '../hooks/useNavigation'
+import { useVisible } from '../hooks/useVisible'
 
 const Header = () => {
   const { scrollToStart } = useNavMenu();
+  const { isVisible } = useVisible()
+
+  console.log(isVisible);
 
   return (
     <header
       id='header'
-      className='
+      className={`
         w-full 
         max-w-[1110px] 
         mx-auto 
@@ -20,11 +24,13 @@ const Header = () => {
         fixed 
         top-0 
         fontRasa 
-        text-whiteColor 
         z-10
         bg-transparent
-        border-b-0
-      '>
+        ${(isVisible)
+          ? 'text-whiteColor border-none'
+          : `text-blackColor border-b border-blackColor bg-[url('../../public/background_media/background_general.png')]`
+        }
+      `}>
       <Logo
         fontSize='default'
         spanSize='default'

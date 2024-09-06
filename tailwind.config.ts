@@ -15,7 +15,10 @@ const config: Config = {
       colors: {
         'blackColor': '#1D0C07',
         'whiteColor': '#FFFFFF',
-      }
+      },
+      backdropBlur: {
+        '10': '10px',
+      },
     },
   },
   plugins: [],

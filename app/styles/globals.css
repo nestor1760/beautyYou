@@ -22,3 +22,9 @@
 body {
   overflow-x: hidden;
 }
+
+@layer utilities {
+  .backdrop-blur-10 {
+    backdrop-filter: blur(10px);
+  }
+}

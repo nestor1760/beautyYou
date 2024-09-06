@@ -1,8 +1,19 @@
+'use client'
+
 import { BsArrowDown } from "react-icons/bs"
+import { useVisible } from "../hooks/useVisible"
 
 const HomePart = () => {
+  const { ref, isVisible } = useVisible()
+
+  console.log(isVisible);
+
+
   return (
-    <section className={`
+    <section
+      ref={ref}
+      id="home"
+      className={`
       flex 
       items-center 
       justify-center
