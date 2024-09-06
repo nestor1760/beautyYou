@@ -1,5 +1,6 @@
 import React from 'react'
-import NavigationItem from '../components/NavigationItem'
+import NavigationItem from '../shared/NavigationItem'
+
 // import Image from 'next/image'
 
 const GalleryPart = () => {

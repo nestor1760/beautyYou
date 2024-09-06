@@ -25,7 +25,11 @@ const Header = () => {
         bg-transparent
         border-b-0
       '>
-      <Logo fontSize='default' spanSize='default' onClick={() => scrollToStart()} />
+      <Logo
+        fontSize='default'
+        spanSize='default'
+        onClick={() => scrollToStart()}
+      />
       <Navigation />
     </header>
   )

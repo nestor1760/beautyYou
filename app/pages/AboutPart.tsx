@@ -2,14 +2,19 @@
 
 import Image from 'next/image'
 import React from 'react'
-import NavigationItem from '../components/NavigationItem'
+import NavigationItem from '../shared/NavigationItem'
 import Button from '../UI/Button'
 
 const AboutPart = () => {
   return (
     <section id='about me' className='flex items-center justify-center flex-col pt-[123px]'>
       <div className='flex items-start justify-between w-full max-w-[1110px]'>
-        <Image src='/about_media/hero_image.png' width={475} height={659} alt='hero_icon' />
+        <Image
+          src='/about_media/hero_image.png'
+          width={475}
+          height={659}
+          alt='hero_icon'
+        />
         <div className='flex items-end justify-between h-[659px] flex-col flex-grow'>
           <NavigationItem label='about me' />
           <div className='max-w-[542px] max-h-[252px] text-end'>

@@ -8,3 +8,10 @@ export interface ILogoProps {
 export interface INavItemProps {
   label: string,
 }
+
+//for navigationData.ts
+export interface ISocialData {
+  id: number,
+  link: string,
+  name: string
+}
