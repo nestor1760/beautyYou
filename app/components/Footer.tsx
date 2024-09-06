@@ -18,6 +18,12 @@ const Footer = () => {
         />
         <FooterNav />
       </div>
+      <div className='flex items-center justify-center w-full border-t border-solid border-black mt-[73px] py-3'>
+        <div className='flex items-center justify-between w-full max-w-[1110px] italic'>
+          <p>&copy; 2024</p>
+          <p>Beauty(you) production. All rights reserved</p>
+        </div>
+      </div>
     </footer>
   )
 }
