@@ -15,3 +15,12 @@ export interface ISocialData {
   link: string,
   name: string
 }
+
+//for galleryData.ts
+export interface IGalleryData {
+  id: number,
+  path: string,
+  name: string,
+  width?: number,
+  height?: number
+}

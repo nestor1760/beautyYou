@@ -23,11 +23,10 @@ const Header = () => {
         top-0 
         fontRasa 
         z-10
-        bg-transparent
         duration-300
         ${(visible)
-          ? 'text-whiteColor border-none w-full max-w-[1110px] px-0'
-          : `text-blackColor border-b border-blackColor bg-[url('../../public/background_media/background_general.png')] w-screen px-[10%]`
+          ? 'text-whiteColor border-none w-full max-w-[1110px] px-auto bg-transparent'
+          : `text-blackColor border-b border-blackColor bg-[url('../../public/background_media/background_general.png')] backdrop-blur-md w-screen px-[15%]`
         }
       `}>
       <Logo
