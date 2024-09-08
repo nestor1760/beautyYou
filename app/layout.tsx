@@ -29,6 +29,7 @@ export default function MainLayout({
             items-center 
             flex-col 
             h-full
+            fontRasa
             bg-[url('../../public/background_media/background_general.png')]
             `}>
             <Header />
