@@ -3,6 +3,7 @@ import { Rasa } from "next/font/google";
 import "./styles/globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import RecoilContextProvider from "./recoil/recoilContextProvider";
 
 
 const inter = Rasa({ subsets: ["latin"] });
@@ -20,21 +21,23 @@ export default function MainLayout({
   return (
     <html lang="en">
       <body>
-        <div className={`
-          ${inter.className}
-          flex 
-          justify-center 
-          items-center 
-          flex-col 
-          h-full
-          bg-[url('../../public/background_media/background_general.png')]
-          `}>
-          <Header />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <RecoilContextProvider>
+          <div className={`
+            ${inter.className}
+            flex 
+            justify-center 
+            items-center 
+            flex-col 
+            h-full
+            bg-[url('../../public/background_media/background_general.png')]
+            `}>
+            <Header />
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </RecoilContextProvider>
       </body>
     </html>
   );

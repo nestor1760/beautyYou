@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState } from "react";
+import { useRecoilState } from "recoil";
+import { headerState } from "../state/atoms/headerState";
 
 export const useVisible = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(true);
+  const [_, setVisible] = useRecoilState(headerState);
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
-        setIsVisible(entry.isIntersecting);
+        setVisible(entry.isIntersecting);
       });
     };
 
@@ -28,5 +30,5 @@ export const useVisible = () => {
     };
   }, []);
 
-  return { isVisible, ref }
+  return { ref }
 }

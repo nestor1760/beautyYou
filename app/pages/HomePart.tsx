@@ -4,10 +4,7 @@ import { BsArrowDown } from "react-icons/bs"
 import { useVisible } from "../hooks/useVisible"
 
 const HomePart = () => {
-  const { ref, isVisible } = useVisible()
-
-  console.log(isVisible);
-
+  const { ref } = useVisible()
 
   return (
     <section
