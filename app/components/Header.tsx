@@ -9,11 +9,7 @@ import { headerState } from '../state/atoms/headerState'
 
 const Header = () => {
   const { scrollToStart } = useNavMenu();
-
   const [visible, setVisible] = useRecoilState(headerState)
-
-  console.log(visible);
-
 
   return (
     <header
@@ -30,7 +26,7 @@ const Header = () => {
         bg-transparent
         duration-300
         ${(visible)
-          ? 'text-whiteColor border-none w-full max-w-[1110px]'
+          ? 'text-whiteColor border-none w-full max-w-[1110px] px-0'
           : `text-blackColor border-b border-blackColor bg-[url('../../public/background_media/background_general.png')] w-screen px-[10%]`
         }
       `}>
