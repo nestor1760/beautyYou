@@ -4,15 +4,9 @@ import Image from 'next/image'
 import React from 'react'
 import NavigationItem from '../shared/NavigationItem'
 import Button from '../UI/Button'
-// import { useScrollPosition } from '../hooks/useScrollPosition'
+import Slogan from '../UI/Slogan'
 
 const AboutPart = () => {
-
-  // const scroll = useScrollPosition()
-
-  // console.log(scroll);
-
-
   return (
     <section
       id='about me'
@@ -37,12 +31,14 @@ const AboutPart = () => {
               Hello! I&lsquo;m Sara, your brow artist with 6 years of experience. <br />My mission is to enhance your natural beauty through perfectly shaped brows. Join me for a session where every detail matters, and your satisfaction is the goal. You can expect personalized attention and customized solutions tailored to your unique brow needs and preferences. With my dedication and passion for beauty, I strive to exceed your expectations and leave you feeling empowered and confident in your look.
             </p>
           </div>
-          <Button />
+          <Button label='book now' />
         </div>
       </div>
-      <p className='w-[882px] mt-[200px] mb-[180px] text-[36px] italic uppercase text-center tracking-normal'>
-        Beauty is not only a reflection, but also a feeling that permeates the soul and refreshes it with every breath
-      </p>
+      <Slogan
+        slogan='Beauty is not only a reflection, but also a feeling that permeates the soul and refreshes it with every breath'
+        mb='180px'
+        mt='200px'
+      />
     </section>
   )
 }

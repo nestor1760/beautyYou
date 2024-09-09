@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({ label }: { label: string }) => {
   return (
     <button className='
-    w-[200px] 
-    h-[49px] 
+    min-w-[200px] 
+    min-h-[49px] 
     border-solid 
     border-[1.5px] 
     border-blackColor 
@@ -15,7 +15,7 @@ const Button = () => {
     transition-shadow 
     duration-300
     '>
-      BOOK NOW
+      {label.toUpperCase()}
     </button>
   )
 }

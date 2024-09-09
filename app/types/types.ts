@@ -24,3 +24,10 @@ export interface IGalleryData {
   width?: number,
   height?: number
 }
+
+//for Slogan.tsx
+export interface ISlogan {
+  slogan: string,
+  mb?: string,
+  mt?: string
+}
