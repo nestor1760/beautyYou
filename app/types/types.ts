@@ -31,3 +31,10 @@ export interface ISlogan {
   mb?: string,
   mt?: string
 }
+
+//for promotionImageData.ts
+export interface IPromotionImage {
+  id: number,
+  path: string,
+  name: string
+}

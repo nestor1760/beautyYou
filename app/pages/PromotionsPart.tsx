@@ -3,6 +3,7 @@ import NavigationItem from '../shared/NavigationItem'
 import Image from 'next/image'
 import Button from '../UI/Button'
 import Slogan from '../UI/Slogan'
+import { promotionImageData } from '../data/promotionImageData'
 
 const PromotionsPart = () => {
   return (
@@ -36,6 +37,18 @@ const PromotionsPart = () => {
         mb='139px'
         mt='180px'
       />
+      <div className='flex items-center justify-center w-full mb-[187px]'>
+        {promotionImageData.map(image =>
+          <Image
+            key={image.id}
+            src={image.path}
+            width={190}
+            height={238}
+            alt={image.name}
+            className='mr-12 last:mr-0'
+          />
+        )}
+      </div>
     </section>
   )
 }
